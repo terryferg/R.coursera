@@ -1,0 +1,91 @@
+This lecture is going to be a lecture that covers the basic Git and GitHub
+commands that you're going to be using for the files that you're going to be creating in this
+class. So the first thing that we should do is
+sort look at the structure of where the different files are and what
+the different commands are going to do. So you can start off by looking here at the work space where you're actually
+working on files on your computer, so that's like the directories where you're working with
+the files. Then there's an index. This tells Git what are the files that it should be controlling under
+version control. And then there's the local repository;
+these are the files that are stored or version controlled on
+your local computer. Finally, there's the remote repository. In our case, that will always be GitHub. So, the idea here is that you're starting off in your workspace and you create a
+file. And the first thing that you need to do is
+you need to add that file to the index so that Git knows to to monitor that
+file and keep up with all of its changes. And then what you need to do is you need
+to commit that file so that, you need to put a version of that file in your local repository so that it can be stored
+and updated. So as you make changes, you keep committing those changes to your local
+repository. Finally, sometime when you have made a few
+Commits and you want to update the remote repository,
+then what you'll be doing is you'll be issuing a Push
+Command to be able to put those changes into your
+remote repository. Okay, so the first thing that you're going to need to do is suppose you're
+working in a directory that is a repo that is
+being under version control by Git. So the first thing that you're going to
+want to maybe do is put new files under version controls, so what you need
+to do is add them to the index. And so to let know, Git know that they need to be tracked, you can use the add
+command. So this is Gitadd., adds all the new files in your current
+working directory that you are working in, so this is presuming that you are in the
+directory where you are adding new files. Git add -u will actually update what
+happens to the files that have changed names or were
+deleted. So gitadd., will just add all the new files, gitadd -u
+deals with all the changes to files either adding or
+deleting or sort of name changing. And then gitadd -A does both of the
+previous things all in one command. So before you try to commit things to your
+local repository, you need to make sure that you use the add command, so that
+you can add things to the index. Then once you've added them to the index,
+you can commit them to your local repo. And so the way that you do that is you can
+use the git commit command, so you do gitcommit, and
+then a flag, -m, and a message here. And so the message is hopefully a useful
+description of what are the changes that are happening in
+this command. So, if I've added some new files, that message might say I've the following new
+files. Or it might tell you a little bit about
+the things that you've deleted or changed so that you can
+change your local repo. This is only going to make changes to the
+local repo, it won't make any changes to GitHub, this is
+still a local action. So if you would like to put things up on
+GitHub, then what you can do is, still in that same working directory, you could type the command, git
+push. And so what that will do is take all the
+changes that you've committed up until then and it will push them to the
+remote directory on Github. Sometimes you might be working on a project, particularly in this class where
+there's a version that might be used by many other
+people, and you might not want to edit the version that's being used
+by everyone because if you make a lot of changes to it, it might break all
+the work that they're doing. So one thing that you might do, first is
+you might actually create a branch. So a branch is just another version of the same directory where you can make changes
+sort of independently. So what you can do is you can use git
+checkout -b and then the name of the branch that you want to do and
+that will create a new branch. The default branch for all the repos that
+are created with Github is the master branch, but you can create a repo with any other names they develop for
+development branch. To see what branch you're on at any given
+time. If you go into the current working
+directory where the repo is, and you type git branch, it'll tell you
+what branch you're on. If you want to switch back to the master
+branch, what you can do is, you can type git checkout master, and
+we'll check you out back to the master branch. And so you can look at that branch. One thing that you can do is once you've
+made a pull request, or a push of your changes up
+to your repo. Suppose that you're working on a repo
+where you're on a different branch or you're working on a repo that
+you forked from somebody else, then what you might want to do is merge
+your changes back into the original repo or into the original
+branch that you were working on. To do this you need to issue a pull
+request. This is a unique fit, feature of Gitbhub. It actually isn't a feature of Git. And so what you do is you go to the Github
+website and you, if you go to the branch that
+you're interested in. So if you go and pick which branch that
+you're working on then what you can do is you can actually click on this button over here which is compare and pull
+request. And what that will do is it will issue a
+pull request to the individual that owns that
+other branch or repo. So if it's yourself, you'll get a notification that there's been a pull
+request. If it's somebody else, they'll get a
+notification. And then they can decide whether to merge
+that pull request into their repo or not if they think the
+changes are appropriate. So you can see all the changes that were
+made and confirm whether they were sort of
+appropriate and interesting or not. So I'm giving you the very, very basis of the Github commands here, but there's a
+whole lot more. And you can often run into little tricks
+and difficulties with Git and Github. So the best place to start is actually a
+Github help I found. But the Git documentation is actually
+quite thorough, it takes a little bit more reading and a little bit
+more doing. Although my experience has been that the
+best place to, to deal with this is to type sort of what you
+think you want to do into Google or into Stack
+Overflow and you find out the answers much more quickly
+that way in my experience.

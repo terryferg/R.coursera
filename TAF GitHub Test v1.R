@@ -19,3 +19,5 @@ summary(hw1.data.df$Ozone[hw1.data.df$Month=='5'])
 # based on variable values
 newdata <- mydata[ which(mydata$gender=='F' 
                          & mydata$age > 65), ]
+
+
